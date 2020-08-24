@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_marginTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/radioBike"
+        android:id="@+id/map"
+        android:src="@mipmap/map"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/endereco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Av. Faria Lima, 4646"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/bike_entrega"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/endereco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- St. Centro Oeste, Brasil"
+        android:textSize="11dp"
+        android:layout_toRightOf="@id/bike_entrega"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Tipos de Entrega:"/>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <RadioButton
+            android:id="@+id/radioBike"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radioBike"
+            android:id="@+id/bike_entrega"
+            android:src="@mipmap/ic_bike"/>
+
+        <TextView
+            android:id="@+id/titulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/bike_entrega"/>
+
+        <TextView
+            android:id="@+id/titulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rápido e amigo do meio ambiente"
+            android:layout_below="@id/titulo1"
+            android:layout_toRightOf="@id/bike_entrega"/>
+
+        <TextView
+            android:id="@+id/titulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras até 15kg e de pequeno tamanho."
+            android:layout_below="@id/titulo2"
+            android:layout_toRightOf="@id/bike_entrega"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 6,00"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <RadioButton
+
+            android:id="@+id/radioMoto"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radioMoto"
+            android:id="@+id/moto_entrega"
+            android:src="@mipmap/ic_moto"/>
+
+        <TextView
+            android:id="@+id/titulom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moto"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/moto_entrega"/>
+
+        <TextView
+            android:id="@+id/titulom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rápido e robusto"
+            android:layout_below="@id/titulom1"
+            android:layout_toRightOf="@id/moto_entrega"/>
+
+        <TextView
+            android:id="@+id/titulom3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras maiores 15kg e de pequeno e médio tamanho."
+            android:layout_below="@id/titulom2"
+            android:layout_toRightOf="@id/moto_entrega"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 9,00"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <RadioButton
+            android:id="@+id/radioCarro"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radioCarro"
+            android:id="@+id/carro_entrega"
+            android:src="@mipmap/ic_car"/>
+
+        <TextView
+            android:id="@+id/tituloc1"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Carro"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/carro_entrega"/>
+
+        <TextView
+            android:id="@+id/tituloc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robusto e seguro"
+            android:layout_below="@id/tituloc1"
+            android:layout_toRightOf="@id/carro_entrega"/>
+
+        <TextView
+            android:id="@+id/tituloc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras maiores 30kg ou de grande tamanho."
+            android:layout_below="@id/tituloc2"
+            android:layout_toRightOf="@id/carro_entrega"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 15,00"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>
